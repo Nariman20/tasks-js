@@ -1,9 +1,17 @@
-function arrayPlusArray(arr1, arr2) {
-    let arrAll = [...arr1, ...arr2];
-    let arrSum = 0;
-    for(let i = 0; i < arrAll.length; i++){
-      arrSum += arrAll[i];
-    } return arrSum
-  }
+const fizzBuzz = num => {
+    for(let i = 1; i < num; i++) {
+        if(i % 3 === 0 && i % 5 === 0) {
+            console.log('fizzbuzz')
+        }
+        else if(i % 3 === 0) {
+            console.log('fizz')
+        } 
+        else if(i % 5 === 0) {
+            console.log('buzz')
+        } else {
+            console.log(i)
+        }
+    }
+}
 
-arrayPlusArray([1, 2, 3], [4, 5, 6])
+fizzBuzz(24);
