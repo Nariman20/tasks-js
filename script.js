@@ -70,3 +70,18 @@ const fizzBuzz = num => {
 }	
 fizzBuzz(14)
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Scrolling Text
+// Ваша задача - завершить функцию, которая принимает строку и 
+// возвращает массив со всеми возможными поворотами данной строки 
+// в верхнем регистре.
+
+function scrollingText(text){
+    let res = [];
+    for(let i = 0; i< text.length; i++){
+      res.push((text.slice(i) + text.slice(0, i)).toUpperCase())
+    }
+     return res;          
+}
+
+scrollingText('abc')
